@@ -15,7 +15,7 @@ This program was tested on the San Diego Supercomputer Center's Expanse cluster 
 ## Solution Specifics
 The problem space is split into rectangular tiles, and each processor in the system is assigned to solve the equation for its own tile. Exchange of values at the boundaries of the tiles, also known as **ghost cell** exchanges between processors, are handled in the code. Note that we use **asynchronous communication** in MPI to exchange the ghost cell values. The .config JSON files inside the [tests](tests/) directory contain the grid setup, as well as co-ordinates for rectangular obstacles that ensure that we see some interesting stuff in the output waveform!
 
-Our findings reveal a preference for processor geometries that reduce the overhead of sideways communication (i.e. more processors along the x-dimension and less along the y-) since sideways communication involves additional overheads of buffering (for more detailed analysis read our project report [here](report/CSE260_PA3_Report.pdf))
+Our findings reveal a preference for processor geometries that reduce the overhead of sideways communication (i.e. more processors along the x-dimension and less along the y-) since sideways communication involves additional overheads of buffering (for more detailed analysis read our project report [here](report/report.pdf))
 
 ### Some Cool Optimizations
 
