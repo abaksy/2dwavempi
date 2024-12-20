@@ -8,7 +8,7 @@ Where $u$ is the field variable (amplitude, intensity, wave height) being measur
 
 The second term of the above equation, called the 2-D Laplacian, is estimated in a discrete grid using a **5-point stencil**.
 
-![5-Point Stencil](outputs/stencil.png)
+![5-Point Stencil](img/stencil.png)
 
 This program was tested on the San Diego Supercomputer Center's Expanse cluster which has 728 "standard" compute nodes having 128 CPU cores each.
 
